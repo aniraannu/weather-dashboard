@@ -5,7 +5,6 @@ var weatherDayCityEl = document.querySelector("#weather-day-city");
 var weatherDayTempEl = document.querySelector("#weather-day-temp");
 var weatherDayWindEl = document.querySelector("#weather-day-wind");
 var weatherDayHumidityEl = document.querySelector("#weather-day-humidity");
-var weatherDayUvIndexEl = document.querySelector("#weather-day-index");
 var forecastContainerEl = document.querySelector("#forecast-container");
 var weatherDayIconEl = document.querySelector("#weather-day-icon");
 var buttonContainerEl = document.querySelector("#button-container");
