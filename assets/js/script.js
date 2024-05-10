@@ -53,7 +53,7 @@ function populate5day(dailyWeatherData) {
 }
 //fetch api 
 const getCityDayWeather = function (city) {
-    const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`;
+    const apiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`;
     //first fetch request to get the latitude and longitude of the city by name
     fetch(apiUrl)
         .then(function (response) {
@@ -71,7 +71,7 @@ const getCityDayWeather = function (city) {
             var cityObject = data[0];
             var lat = cityObject.lat;
             var lon = cityObject.lon;
-            var currentWeatherUrl = `http://api.openweathermap.org/data/2.5/forecast?&units=imperial&lat=${lat}&lon=${lon}&appid=${APIKey}`;
+            var currentWeatherUrl = `https://api.openweathermap.org/data/2.5/forecast?&units=imperial&lat=${lat}&lon=${lon}&appid=${APIKey}`;
 
             fetch(currentWeatherUrl)
                 .then(function (response) {
