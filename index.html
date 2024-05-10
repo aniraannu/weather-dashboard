@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Head-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <!--Style Sheets-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <!--Bootstrap-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <!--Fonts-googleAPI-->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet" />
+    <!--Custom styles-->
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
+<!--Body Starts Here-->
 <body class="flex-column min-100-vh">
     <!--Header-->
     <header>
@@ -28,9 +26,11 @@
     </header>
     <!--Main-->
     <main>
+        <!--Aside: Include the search box and dynamically populated previously searched city buttons-->
         <section>
             <div class="sidebar">
                 <h2>Search for a City:</h2>
+                <!--Form to search for city-->
                 <div>
                     <form id="search-form">
                         <div class="form-group">
@@ -41,11 +41,15 @@
                     </form>
                 </div>
                 <br />
+                <!--City Buttons Section -->
                 <div id="button-container">
                     <!-- Used as a skeleton container , will be populated using js-->
                 </div>
             </div>
         </section>
+        <!--Aside Ends Here-->
+        <!--Section to display current weather and 5 day wheather-->
+        <!--Current Weather Display Box-->
         <section class="home-section">
             <div class="card border-dark mb-3" id="current-condition col-1" style="max-width: 50rem">
                 <div class="card-body text-dark">
@@ -65,10 +69,11 @@
                 </div>
             </div>
         </section>
+        <!--5 Day Weather Cards-->
         <section class="bottom-section">
             <h3>5-Day Forecast:</h3>
             <div class="card-deck" id="forecast-container">
-
+                <!--This section is populated by the JS-->
             </div>
         </section>
     </main>
@@ -76,5 +81,4 @@
     <!--JS File-->
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
