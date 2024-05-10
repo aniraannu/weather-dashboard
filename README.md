@@ -55,3 +55,4 @@ None
 Inspiration, code snippets, etc.
 
 * [dbader](https://github.com/dbader/readme-template)
+* [openweatherAPI](https://openweathermap.org/forecast5)
