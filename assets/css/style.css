@@ -1,0 +1,122 @@
+/* color pallete from schemecolor.com */
+:root {
+    --light: #E6E6E6;
+    --dark: #4270B2;
+    --gray: grey;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--light);
+}
+
+.jumbotron {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+
+#search-button {
+    width: 18.75rem;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+#search-input {
+    width: 17rem;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    margin-left: 1rem;  
+}
+
+#current-condition {
+    margin: 1rem;
+}
+
+.home-section {
+    /* display: flex;
+    flex-wrap: wrap; */
+    height: 100%;
+    position: relative;
+    width: calc(100% - 300px);
+    left: 350px;
+}
+
+.bottom-section {
+    position: relative;
+    width: calc(100% - 300px);
+    left: 350px;
+}
+
+.card-deck {
+    width: 1000px;
+}
+
+.future-body {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1rem;
+}
+
+.btn-secondary {
+    background-color: var(--gray);
+    width: 18.75rem;
+    margin-bottom: 5px;
+}
+
+dt {
+    float: left;
+    margin-right: 7px;
+}
+
+.card-future {
+    width: 165px;
+}
+
+.card-body {
+    background-color: var(--dark);
+}
+
+h2, h5 {
+    color: var(--light);
+}
+
+dl {
+    color: var(--light);
+}
+
+.current-header {
+    position: relative;
+}
+
+.favorable {
+    background-color: green;
+}
+
+.moderate {
+    background-color: yellow;
+    color: black;
+}
+
+.severe {
+    background-color: red;
+}
+
+#weather-day-index {
+    padding: 2px;
+}
